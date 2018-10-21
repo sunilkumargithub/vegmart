@@ -1,0 +1,24 @@
+
+
+<a style="cursor:pointer;"
+class="list-group-item clearfix"
+(click)="onSelected()"
+>
+<div class="pull-right">
+ <h3 class="list-group-item-heading">{{veg.itemname}}</h3>
+ <!--
+   <h6 class="list-group-item-text">{{veg.itemdescription}}</h6>
+ -->
+ <h6 class="list-group-item-text"
+  style="color:red ; text-align:right;"
+   >({{veg.price}})/kg</h6>
+
+</div>
+
+<span class="pull-left">
+ <img [src]="veg.imageurl"
+      alt="{{veg.itemname}}"
+      class="img-responsive"
+      style="max-height:50px;">
+</span>
+</a>

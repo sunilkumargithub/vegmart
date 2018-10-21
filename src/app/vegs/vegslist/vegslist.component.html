@@ -1,0 +1,22 @@
+<app-vegsitem
+*ngFor="let VegElement of veg"
+[veg]=VegElement
+(vegSelected)="onVegSelected(VegElement)"
+></app-vegsitem>
+
+<mat-spinner *ngIf="isLoading"> </mat-spinner>
+<div multi="true" *ngIf="veg.length > 0 &&  !isLoading">
+<div class="row">
+  <div class="col-xs-12">
+
+
+
+  </div>
+</div>
+</div>
+<mat-paginator  [length]="totalposts"
+[pageSize]="postsperpage"
+[pageSizeOptions]="pagesizeoptions"
+(page)= "onchangedpage($event)"
+*ngIf="veg.length >0"></mat-paginator>
+

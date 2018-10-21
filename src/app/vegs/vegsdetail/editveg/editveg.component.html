@@ -1,0 +1,40 @@
+<p>
+  editveg works!
+</p>{{'sunil'}}
+<div *ngFor="let veg2 of fixedVeg let i = index"
+>
+<h3 class="list-group-item-heading">{{veg2.itemname}}</h3>
+
+
+</div>
+
+
+<div style="cursor:pointer;"
+class="list-group-item clearfix"
+
+
+
+
+*ngFor="let veg1 of editVeg let i = index">
+<div class="pull-left">
+ <h3 class="list-group-item-heading">{{veg1.itemname}}</h3>
+ <h3 class="list-group-item-heading">{{veg1.itemdescription}}</h3>
+
+ <!--
+   <h6 class="list-group-item-text">{{veg.itemdescription}}</h6>
+ -->
+ <h6 class="list-group-item-text"
+  style="color:red ; text-align:right;"
+   >({{veg1.price}})/kg</h6>
+
+</div>
+<!--
+<span class="pull-left">
+ <img [src]="veg1.imageurl"
+      alt="{{veg1.itemname}}"
+      class="img-responsive"
+      style="max-height:50px;">
+</span>
+
+-->
+</div>

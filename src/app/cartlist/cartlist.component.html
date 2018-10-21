@@ -1,0 +1,51 @@
+
+
+<div class="row col-md-10">
+
+<form>
+  <div class="col-md-offset-2">
+  <ul class="list-group">
+    <a class="list-group-item" *ngFor="let cart of cart; let i=index">
+{{i+1}}.
+    <span style="color:royalblue;font-family:Verdana, Geneva, Tahoma, sans-serif"
+
+    >{{cart.name}} &nbsp;</span>
+    <span style="color:red">{{cart.price}}/kg </span>
+
+ <div class="row col-md-offset-2">
+
+ <div class="col-md-2">
+   <button class="btn btn-primary" (click)="ondecrease(cart,i)">-</button>
+     <input type="text" name="quantity"
+        style=" height: 35px; width:30px;
+        "value="{{cart.quantity}}" maxlength="3" readonly >
+
+     <button class="btn btn-primary" (click)="onincerase(cart,i)">+</button>
+ </div>
+
+ <div class="col-md-2">
+    <label for="amount">subtotal:</label>
+      </div>
+      <div *ngIf="ischangedcartitem"> {{cart.amount}}Rs</div>
+     <div  *ngIf="!ischangedcartitem">{{cart.amount}}Rs.</div>
+
+</div>
+
+</a>
+</ul>
+
+</div>
+
+<div><label for="total">Total:</label>
+{{total}}Rs.
+</div>
+</form>
+</div>
+<hr>
+<div class="row">
+  <div class="col-md-4 col-md-offset-2">
+    <button type="button" class="btn btn-danger" (click)="oncheckout()">Checkout</button>
+  </div>
+</div>
+
+

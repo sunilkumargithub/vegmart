@@ -1,0 +1,19 @@
+
+<div class="row">
+<div class="col-md-3">
+<app-vegslist (vegWasSelected)="selectedVeg = $event"></app-vegslist>
+</div>
+<div class="col-md-9">
+<app-vegsdetail
+*ngIf="selectedVeg; else infotext"
+[veg]="selectedVeg"
+></app-vegsdetail>
+<ng-template #infotext>
+  <p>please select a Vegetable!!</p>
+</ng-template>
+</div>
+
+
+
+
+</div>

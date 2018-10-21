@@ -1,0 +1,70 @@
+<p style="color:red"><b>{{signupresult}}</b></p>
+<div class="container centered">
+  <div class="row">
+    <form class="form-horizontal" (ngSubmit)="onsignup(signupform)" #signupform="ngForm">
+
+      <div class="form-group">
+        <label for="email" class="col-xs-2 col-xs-offset-2 control-label">Email**</label>
+        <div class="col-xs-3">
+          <input type="email" name="email" id="email" class="form-control" ngModel="a@h.com">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="password" class="col-xs-2 col-xs-offset-2 control-label">Password**</label>
+        <div class="col-xs-3">
+          <input type="password" name="password" id="password" class="form-control" ngModel="password">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="mobile" class="col-sm-2 col-xs-offset-2 control-label">Mobile</label>
+        <div class="col-xs-3">
+          <input type="text" name="mobile" id="mobile" class="form-control" ngModel="98389338">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="line1" class="col-sm-2 col-xs-offset-2 control-label">Address</label>
+        <div class="col-xs-3">
+          <input type="text" name="line1" id="line1" class="form-control" ngModel="line1">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="line2" class="col-sm-2 col-xs-offset-2 control-label">Address</label>
+        <div class="col-xs-3">
+          <input type="text" name="line2" id="line2" class="form-control" ngModel="line2">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="line3" class="col-sm-2 col-xs-offset-2 control-label">Address</label>
+        <div class="col-xs-3">
+          <input type="text" name="line3" id="line3" class="form-control" ngModel="line3">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="city" class="col-sm-2 col-xs-offset-2 control-label">City</label>
+        <div class="col-xs-3">
+          <input type="text" name="city" id="city" class="form-control" ngModel="city">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="state" class="col-sm-2 col-xs-offset-2 control-label">State</label>
+        <div class="col-xs-3">
+          <input type="text" name="state" id="state" class="form-control" ngModel="state">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="zipcode" class="col-sm-2 col-xs-offset-2 control-label">Zipcode</label>
+        <div class="col-xs-3">
+          <input type="text" name="zipcode" id="zipcode" class="form-control" ngModel="12345" />
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col-xs-11 text-center">
+          <button type="submit" class="btn btn-primary"> SignUp</button>
+        </div>
+      </div>
+    </form>
+
+  </div>
+</div>
+
+

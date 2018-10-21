@@ -1,0 +1,29 @@
+<p style="color:red"><b>{{signinresult}}</b></p>
+<div class="container centered">
+  <div class="row">
+    <form class="form-horizontal" (ngSubmit)="onsignin(signinform)" #signinform="ngForm">
+
+      <div class="form-group">
+        <label for="email" class="col-xs-2 col-xs-offset-2 control-label">Email**</label>
+        <div class="col-xs-3">
+          <input type="email" name="email" id="email" class="form-control" ngModel="a2@h.com">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="password" class="col-xs-2 col-xs-offset-2 control-label">Password**</label>
+        <div class="col-xs-3">
+          <input type="password" name="password" id="password" class="form-control" ngModel="password">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <div class="col-xs-11 text-center">
+          <button type="submit" class="btn btn-primary"> SignIn</button>
+        </div>
+      </div>
+    </form>
+
+  </div>
+</div>
+
+
